@@ -1,0 +1,36 @@
+{
+	"name": "ds_fixed_Json",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_AzureDataLakeStorage",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "jsonproduto.json",
+				"fileSystem": "json-files"
+			}
+		},
+		"schema": {
+			"type": "object",
+			"properties": {
+				"codigo": {
+					"type": "integer"
+				},
+				"nome": {
+					"type": "string"
+				},
+				"preco": {
+					"type": "number"
+				},
+				"qtd_estoque": {
+					"type": "integer"
+				}
+			}
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

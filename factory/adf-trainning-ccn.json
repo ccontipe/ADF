@@ -1,0 +1,9 @@
+{
+	"name": "adf-trainning-ccn",
+	"location": "eastus2",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "4e53e8fc-0ad2-4548-8165-a03449d25abc",
+		"tenantId": "34ab3252-b288-4f34-a669-0a1642d65cad"
+	}
+}
